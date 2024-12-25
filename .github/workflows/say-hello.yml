@@ -11,6 +11,7 @@ jobs:
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v4
       - run: |
+          make install
           make lint
           make test
-          make setup
+          make build
